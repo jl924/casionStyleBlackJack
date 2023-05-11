@@ -95,6 +95,5 @@
 }
 
 .betContainer {
-  position: absolute;
-  right: 10rem;
+  margin-left: 10px;
 }

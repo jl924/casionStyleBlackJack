@@ -242,53 +242,6 @@ export default function Home() {
               )
             })}
           </div>
-          <div className="betContainer">
-            <div className="bet">{bet}</div>
-            {start ? (
-              <>
-                <button
-                  onClick={() => {
-                    setBet((current) => current + 10)
-                    setMoney((current) => current - 10)
-                  }}
-                >
-                  10
-                </button>
-                <button
-                  onClick={() => {
-                    setBet((current) => current + 20)
-                    setMoney((current) => current - 20)
-                  }}
-                >
-                  20
-                </button>
-                <button
-                  onClick={() => {
-                    setBet((current) => current + 40)
-                    setMoney((current) => current - 40)
-                  }}
-                >
-                  40
-                </button>
-                <button
-                  onClick={() => {
-                    setBet((current) => current + 100)
-                    setMoney((current) => current - 100)
-                  }}
-                >
-                  100
-                </button>
-                <button
-                  onClick={() => {
-                    setMoney((current) => current + bet)
-                    setBet(0)
-                  }}
-                >
-                  Clear
-                </button>
-              </>
-            ) : null}
-          </div>
           <div className="cardContainer">
             {start ? (
               <button onClick={startGame}>Start</button>
@@ -306,6 +259,53 @@ export default function Home() {
           <div>Player</div>
           <div>{money} 🪙</div>
         </div>
+      </div>
+      <div className="betContainer">
+        <div className="bet">Bet Amount: {bet}</div>
+        {start ? (
+          <>
+            <button
+              onClick={() => {
+                setBet((current) => current + 10)
+                setMoney((current) => current - 10)
+              }}
+            >
+              10
+            </button>
+            <button
+              onClick={() => {
+                setBet((current) => current + 20)
+                setMoney((current) => current - 20)
+              }}
+            >
+              20
+            </button>
+            <button
+              onClick={() => {
+                setBet((current) => current + 40)
+                setMoney((current) => current - 40)
+              }}
+            >
+              40
+            </button>
+            <button
+              onClick={() => {
+                setBet((current) => current + 100)
+                setMoney((current) => current - 100)
+              }}
+            >
+              100
+            </button>
+            <button
+              onClick={() => {
+                setMoney((current) => current + bet)
+                setBet(0)
+              }}
+            >
+              Clear
+            </button>
+          </>
+        ) : null}
       </div>
     </div>
   )
