@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.gameContainer {
+  background-color: #35654d;
+  min-height: 65%;
+  width: 50%;
+  text-align: center;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.dealerContainer {
+  outline: solid;
+  outline-color: black;
+  outline-width: 0.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50%;
+  min-width: 100%;
+  flex-grow: 1;
+}
+
+.playerContainer {
+  outline: solid;
+  outline-color: black;
+  outline-width: 0.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50%;
+  min-width: 100%;
+  flex-grow: 1;
+}
+
+.card {
+  outline: solid;
+  outline-color: black;
+  outline-width: 0.5px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.♠️ {
+  outline: solid;
+  outline-color: black;
+  outline-width: 0.5px;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.♣️ {
+  outline: solid;
+  outline-color: black;
+  outline-width: 0.5px;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.♥️ {
+  outline: solid;
+  outline-color: black;
+  outline-width: 0.5px;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: red;
+}
+
+.♦️ {
+  outline: solid;
+  outline-color: black;
+  outline-width: 0.5px;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: red;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 10px;
+}
+
+.betContainer {
+  position: absolute;
+  right: 10rem;
+}
