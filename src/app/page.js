@@ -138,7 +138,6 @@ export default function Home() {
   }
 
   const [dummy, setDummy] = useState([])
-
   const [stay, setStay] = useState(true)
 
   let endPhase = async () => {
