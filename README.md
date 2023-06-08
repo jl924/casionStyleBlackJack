@@ -6,3 +6,5 @@
 6. After all players have taken their turns, the dealer reveals their face-down card and must hit until their hand value is at least hard 17 or soft 18.
 7. If the dealer's hand value exceeds 21, all remaining players win. Otherwise, the dealer's hand is compared to the player's hand, other higher of the two without busting wins.
 8. Make bets! You win, you double what you bet, You lose, you lose what you bet.
+
+any questions? comment!
